@@ -1,7 +1,11 @@
 package coolpackage
 
-const Version = "v0.0.3"
+import ver "github.com/AislingHPE/simple-go-package/pkg/interfaces"
+
+var v = ver.VersionHolder{
+	Version: "v0.0.4",
+}
 
 func GetVersion() string {
-	return "Version" + Version
+	return "Version " + v.Version
 }
